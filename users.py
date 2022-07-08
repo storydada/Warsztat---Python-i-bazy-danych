@@ -57,7 +57,7 @@ def edit_user(cur, username, password, new_pass):
 
 if __name__ == '__main__':
     try:
-        cnx = connect(database="workshop", user="postgres", password="coderslab", host="127.0.0.1")
+        cnx = connect(database="workshop", user="postgres", password="coderslab", host="localhost")
         cnx.autocommit = True
         cursor = cnx.cursor()
         if args.username and args.password and args.edit and args.new_pass:

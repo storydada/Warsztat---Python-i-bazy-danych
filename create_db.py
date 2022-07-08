@@ -17,7 +17,7 @@ CREATE_MESSAGES_TABLE = """CREATE TABLE messages(
 
 DB_USER = "postgres"
 PASSWORD = "Programista9"
-HOST = "127.0.0.1"
+HOST = "localhost"
 
 try:
     cnx = connect(database="workshop", user=DB_USER, password=PASSWORD, host=HOST)

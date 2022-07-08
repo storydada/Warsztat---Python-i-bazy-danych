@@ -41,7 +41,7 @@ def send_message(cur, from_id, recipient_name, text):
 
 if __name__ == '__main__':
     try:
-        cnx = connect(database="workshop", user="postgres", password="Programista9", host="127.0.0.1")
+        cnx = connect(database="workshop", user="postgres", password="Programista9", host="localhost")
         cnx.autocommit = True
         cursor = cnx.cursor()
         if args.username and args.password:
