@@ -20,7 +20,7 @@ PASSWORD = "Programista9"
 HOST = "127.0.0.1"
 
 try:
-    cnx = connect(database="workshop", user=DB_USER, password=DB_PASSWORD, host=DB_HOST)
+    cnx = connect(database="workshop", user=DB_USER, password=PASSWORD, host=HOST)
     cnx.autocommit = True
     cursor = cnx.cursor()
     try:
@@ -33,7 +33,7 @@ except OperationalError as e:
     print("Connection Error: ", e)
 
 try:
-    cnx = connect(database="workshop", user=DB_USER, password=DB_PASSWORD, host=DB_HOST)
+    cnx = connect(database="workshop", user=DB_USER, password=PASSWORD, host=HOST)
     cnx.autocommit = True
     cursor = cnx.cursor()
 
